@@ -1,0 +1,27 @@
+.navbar {
+    border: 1px solid green;
+    background-color: #76323F;
+    padding-bottom: 1rem;
+}
+
+.navbar-brand {
+    margin: 0 72rem 0 5rem;
+    font-size: 22px;
+    color: #D5D5D5;
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar-brand:hover {
+    color: #C09F80
+}
+
+.nav-link {
+    color: #D5D5D5;
+    font-family: 'Lato', sans-serif;
+}
+
+.nav-link:hover {
+    color: #C09F80;
+}
+
+
