@@ -19,6 +19,7 @@ class Splash extends Component {
     phone: "",
     email: "",
     message: "",
+    password: ""
   };
 
   handleInputChange = event => {
@@ -28,17 +29,25 @@ class Splash extends Component {
     });
   };
 
-  handleFormSubmitInitial = event => {
-    // event.preventDefault();
-    if (this.state.origin && this.state.destination) {
-      // API.saveBook({
-      //   title: this.state.title,
-      //   author: this.state.author,
-      //   synopsis: this.state.synopsis
-      // })
-      //   .then(res => this.loadBooks())
-      //   .catch(err => console.log(err));
-    }
+  handleFormSubmitQuote = event => {
+    event.preventDefault();
+
+    API.saveQuote({
+      name: this.state.name,
+      company: this.state.company,
+      origin: this.state.origin,
+      destination: this.state.destination,
+      freightType: this.state.freightType,
+      estWeight: this.state.estWeight,
+      frequency: this.state.frequency,
+      phone: this.state.phone,
+      email: this.state.email,
+      message: this.state.message,
+      password: this.state.password,
+    })
+      .then(res => console.log(res))
+      .catch(err => console.log(err));
+    
   };
 
   render() {
@@ -133,7 +142,7 @@ class Splash extends Component {
               <div className="modal-body">
                 <form>
                   <div className="form-group">
-                    <label for="freightSelect">Type of Freight (Required)</label>
+                    <label for="freightSelect">Type of Freight</label>
                     <select 
                       value={this.state.freightType}
                       onChange={this.handleInputChange}
@@ -189,20 +198,21 @@ class Splash extends Component {
                   </div>
                   <div className="form-group">
                     <label for="message">Message</label>
-                    <input type="text"
+                    <textarea type="text"
                       value={this.state.message}
                       onChange={this.handleInputChange}
                       name="message"
                       className="form-control"
                       id="message"
-                      placeholder="Any additional details?" />
+                      rows="3"
+                      placeholder="Any additional details?" ></textarea>
                   </div>
                   <button type="button"
                     className="btn btn-primary"
                     data-dismiss="modal"
                     data-toggle="modal"
                     data-target="#createAccount"
-                    disabled={!(this.state.freightType && this.state.email)}
+                    disabled={!(this.state.email)}
                     // onClick={this.handleFormSubmitInitial}
                   >
                     Submit
@@ -223,55 +233,39 @@ class Splash extends Component {
                 </button>
               </div>
               <div className="modal-body">
+                <p>Creating an account has several benefits:</p>
+                <ul>
+                  <li>Check the status of your quote</li>
+                  <li>See who your CSR is</li>
+                  <li>Accept your quote offer</li>
+                </ul>
+                <p>Otherwise, we will contact you at the email you have provided.</p>
                 <form>
                   <div className="form-group">
-                    <label for="quoteName">Create</label>
+                    <label for="password">Create a password for your account:</label>
                     <input type="text"
-                      value={this.state.name}
+                      value={this.state.password}
                       onChange={this.handleInputChange}
-                      name="name"
+                      name="password"
                       className="form-control"
-                      id="quoteName"
-                      aria-describedby="nameHelp"
-                      placeholder="Your Name" />
+                      id="password"
+                      aria-describedby="passwordHelp"
+                      placeholder="Password" />
                   </div>
-                  <div className="form-group">
-                    <label for="companyName">Company Name</label>
-                    <input type="text"
-                      value={this.state.company}
-                      onChange={this.handleInputChange}
-                      name="company"
-                      className="form-control"
-                      id="companyName"
-                      placeholder="" />
-                  </div>
-                  <div className="form-group">
-                    <label for="originCity">Pick Up City</label>
-                    <input type="text"
-                      value={this.state.origin}
-                      onChange={this.handleInputChange}
-                      name="origin"
-                      className="form-control"
-                      id="originCity"
-                      placeholder="" />
-                  </div>
-                  <div className="form-group">
-                    <label for="deliveryCity">Delivery City</label>
-                    <input type="text"
-                      value={this.state.destination}
-                      onChange={this.handleInputChange}
-                      name="destination"
-                      className="form-control"
-                      id="deliveryCity"
-                      placeholder="" />
-                  </div>
-                  <button type="button"
+                  <button type="submit"
                     className="btn btn-primary"
                     data-dismiss="modal"
-                    disabled={!(this.state.origin && this.state.destination)}
-                    onClick={this.handleFormSubmitInitial}
+                    disabled={!(this.state.password)}
+                    onClick={this.handleFormSubmitQuote}
                   >
-                    Submit
+                    Submit Quote
+                    </button>
+                  <button type="sumbit"
+                    className="btn btn-primary"
+                    data-dismiss="modal"
+                    onClick={this.handleFormSubmitQuote}
+                  >
+                    No Thanks
                     </button>
                 </form>
               </div>
