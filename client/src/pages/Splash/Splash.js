@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Carousel from "../../components/Carousel";
+import Footer from "../../components/Footer";
 import API from "../../utils/API";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../../components/Grid";
@@ -15,9 +16,11 @@ class Splash extends Component {
 
   render() {
     return (
-      <Carousel>
-
-      </Carousel>
+      <div>
+        <Carousel />
+        <Container />
+        <Footer />
+      </div>
     )
   }
 };

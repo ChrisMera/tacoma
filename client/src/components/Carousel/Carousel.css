@@ -3,5 +3,13 @@
   height: 800px;
   object-fit: cover;
   margin: auto;
-  width: 90% !important;
+  width: 88% !important;
+}
+
+.carousel-control-prev {
+  cursor: default;
+}
+
+.carousel-control-next {
+  cursor: default;
 }
