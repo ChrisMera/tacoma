@@ -1,0 +1,8 @@
+.nav-link {
+    color: #D5D5D5;
+    font-family: 'Lato', sans-serif;
+}
+
+.nav-link:hover {
+    color: #C09F80;
+}

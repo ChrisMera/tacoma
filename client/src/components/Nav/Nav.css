@@ -1,5 +1,4 @@
 .navbar {
-    border: 1px solid green;
     background-color: #76323F;
     padding-bottom: 1rem;
 }
@@ -12,16 +11,8 @@
 }
 
 .navbar-brand:hover {
-    color: #C09F80
-}
-
-.nav-link {
-    color: #D5D5D5;
-    font-family: 'Lato', sans-serif;
-}
-
-.nav-link:hover {
     color: #C09F80;
+    cursor: default;
 }
 
 

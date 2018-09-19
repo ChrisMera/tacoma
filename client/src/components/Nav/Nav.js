@@ -1,9 +1,11 @@
 import React from "react";
 import "./Nav.css";
+import Login from "../Login";
+import Logout from "../Logout";
 
 const Nav = () => (
     <nav className="navbar sticky-top navbar-expand-lg" id="custom-navbar">
-        <a className="navbar-brand" href="/"><i class="fas fa-truck-moving"></i> Tacoma Transport</a>
+        <a className="navbar-brand" href="/">Tacoma Transport <i class="fas fa-truck-moving"></i></a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
             {/* <span className="navbar-toggler-icon">Menu</span> */}
@@ -12,7 +14,8 @@ const Nav = () => (
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav">
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Login</a>
+                    <Login />
+                    {/* <Logout /> */}
                 </li>
                 {/* <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

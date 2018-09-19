@@ -1,0 +1,20 @@
+.login-btn {
+    color: #D5D5D5;
+    font-family: 'Lato', sans-serif;
+    border: none;
+    background-color: transparent;
+    
+}
+
+.login-btn:focus {
+    outline: 0;
+}
+
+.login-btn:hover {
+    color: #C09F80;
+    cursor: pointer;
+}
+
+.modal-backdrop {
+    z-index: 0;
+}
