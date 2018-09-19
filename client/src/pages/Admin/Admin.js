@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Menu, MenuItem } from "../../components/Menu";
 import "./Admin.css";
 // import { Col, Row, Container } from "../../components/Grid";
 
@@ -9,21 +10,21 @@ class Admin extends Component {
 
   render() {
     return (
-      <div> 
+      
         <div className="container">
           <div className="row">
             <div className="col-md-2 menu">
-            Menu
+            <Menu />
             </div>
-            <div className="col-6">
+            <div className="col-md-8 info-dash">
             Info Dash
             </div>
-            <div className="col">
+            <div className="col api-card">
             API
             </div>
           </div>
         </div>
-      </div>
+     
     )
   }
 

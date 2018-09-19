@@ -1,5 +1,5 @@
 .container {
-  display: table;
+  float: left;
   width: 100%;
   margin: 0;
   padding-bottom: 50px;
@@ -7,9 +7,24 @@
   box-sizing: border-box;
 }
 
+/* .row {
+  width: 125%;
+} */
+
 .menu {
   background-color: #505050;
   margin-top: -20px;
   height: 88vh;
+  width: 80%;
   color: #f4f4ff;
+  padding-top: 20px;
+}
+
+.info-dash {
+  border: 1px solid black;
+  margin: 0 5rem 1rem 5rem;
+}
+
+.api-card {
+  border: 1px solid green;
 }
