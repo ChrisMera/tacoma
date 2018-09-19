@@ -1,7 +1,7 @@
 import React from "react";
 import "./Nav.css";
 import Login from "../Login";
-import Logout from "../Logout";
+// import Logout from "../Logout";
 
 const Nav = () => (
   <nav className="navbar sticky-top navbar-expand-lg" id="custom-navbar">

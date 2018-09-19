@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Menu, MenuItem } from "../../components/Menu";
+import { Menu } from "../../components/Menu";
 import "./Admin.css";
 // import { Col, Row, Container } from "../../components/Grid";
 
