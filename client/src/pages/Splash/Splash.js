@@ -19,7 +19,6 @@ class Splash extends Component {
       <div>
         <Carousel />
         <Container />
-        <Footer />
       </div>
     )
   }

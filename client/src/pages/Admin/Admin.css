@@ -1,0 +1,15 @@
+.container {
+  display: table;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 50px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.menu {
+  background-color: #505050;
+  margin-top: -20px;
+  height: 88vh;
+  color: #f4f4ff;
+}
