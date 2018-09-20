@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Menu } from "../../components/Menu";
+import { Menu, MenuItem } from "../../components/Menu";
 import "./Admin.css";
 // import { Col, Row, Container } from "../../components/Grid";
 
@@ -14,13 +14,12 @@ class Admin extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-2 menu">
-            <Menu />
+            <Menu>
+              <MenuItem></MenuItem>
+            </Menu>
             </div>
             <div className="col-md-8 info-dash">
             Info Dash
-            </div>
-            <div className="col api-card">
-            API
             </div>
           </div>
         </div>

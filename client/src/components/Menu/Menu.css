@@ -3,3 +3,18 @@
   border-bottom: 1px solid #c09f80;
   font-size: 18px;
 }
+
+.menu-group {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-group-item {
+  margin: 15px 0px;
+}
+
+.menu-item {
+  color: #d5d5d5;
+  /* font-family: "Lato"; */
+}
