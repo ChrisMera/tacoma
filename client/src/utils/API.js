@@ -13,7 +13,7 @@ export default {
   deleteQuote: function (id) {
     return axios.delete("/api/quotes/" + id);
   },
-  // Saves a Quoteto the database
+  // Saves a Quote to the database
   saveQuote: function (quoteData) {
     return axios.post("/api/quotes", quoteData);
   }

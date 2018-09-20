@@ -12,7 +12,7 @@ const quoteSchema = new Schema({
   phone: Number,
   email: { type: String, required: true },
   message: String,
-  password: { type: String, required: true },
+  password: { type: String },
   date: { type: Date, default: Date.now }
 });
 

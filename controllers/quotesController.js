@@ -16,10 +16,9 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   create: function (req, res) {
-    console.log(req.body);
     db.Quote
       .create(req.body)
-      .then(docs => res.json(docs))
+      .then(console.log(req.body))
       .catch(err => res.status(422).json(err));
   },
   update: function (req, res) {
