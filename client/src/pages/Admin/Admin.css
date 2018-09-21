@@ -1,16 +1,3 @@
-.container {
-  float: left;
-  width: 100%;
-  margin: 0;
-  /* padding-bottom: 50px; */
-  height: 100%;
-  box-sizing: border-box;
-}
-
-/* .row {
-  width: 125%;
-} */
-
 .menu {
   background-color: #505050;
   margin-top: -20px;
@@ -20,9 +7,12 @@
   padding-top: 20px;
 }
 
-.info-dash {
-  border: 1px solid black;
-  margin: 0 5rem 1rem 5rem;
+.container-fluid {
+  padding: 0;
+}
+
+.row {
+  height: 88vh;
 }
 
 .api-card {
