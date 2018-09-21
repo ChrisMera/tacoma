@@ -12,8 +12,8 @@ class Admin extends Component {
   render() {
     return (
       <Container fluid>
-        <Row className="info-dash">
-          <Col size="md-2" className="menu">
+        <Row>
+          <Col size="md-2">
             <Menu>
               <MenuItem></MenuItem>
             </Menu>

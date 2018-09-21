@@ -10,18 +10,30 @@
 }
 
 .modal-header {
-  border-bottom: 1px solid #D5D5D5;
+  border-bottom: 1px solid #f4f4f4;
 }
 
 .modal-title {
-  color: #D5D5D5;
+  color: #373737;
   font-family: 'Open Sans', sans-serif;
   font-weight: 200;
 }
 
 .modal-content {
-  background-color: rgba(25, 25, 25, 0.9);
-  color: #D5D5D5;
+  background-color: rgba(244, 244, 244, 0.8);
+  color: #373737;;
   font-family: 'Open Sans', sans-serif;
   font-weight: 200;
+  width: 90%;
+  margin: auto;
+  border: none;
+}
+
+.form-control {
+  background-color: #f4f4f4;
+}
+
+.col-md-10 {
+  margin: 20px auto;
+  border: 1px solid black;
 }

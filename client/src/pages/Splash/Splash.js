@@ -3,7 +3,7 @@ import Jumbotron from "../../components/Jumbotron";
 // import Footer from "../../components/Footer";
 import API from "../../utils/API";
 // import { Link } from "react-router-dom";
-// import { Col, Row, Container } from "../../components/Grid";
+import { Col, Row, Container } from "../../components/Grid";
 import "./Splash.css";
 
 class Splash extends Component {
@@ -54,13 +54,16 @@ class Splash extends Component {
     return (
       <div>
         <Jumbotron />
-        <div className="splash-container">
-          <div className="splash-row">
-            <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#requestQuote">
-              Request A Quote
+          <Container fluid>
+            <Row>
+              <Col size="md-10">
+              Insert Image
+              </Col>
+            </Row>
+          <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#requestQuote">
+            Request A Quote
             </button>
-          </div>
-        </div>
+          </Container>
 
         <div className="modal" id="requestQuote" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div className="modal-dialog modal-dialog-centered" role="document">
@@ -122,7 +125,7 @@ class Splash extends Component {
                     disabled={!(this.state.origin && this.state.destination)}
                     // onClick={this.handleFormSubmitInitial}
                     >
-                      Submit
+                    Next <i class="fas fa-arrow-right"></i>
                     </button>
                 </form>
               </div>
@@ -208,7 +211,7 @@ class Splash extends Component {
                       placeholder="Any additional details?" ></textarea>
                   </div>
                   <button type="button"
-                    className="btn btn-primary"
+                    className="modal-btn"
                     data-dismiss="modal"
                     data-toggle="modal"
                     data-target="#createAccount"
@@ -243,7 +246,7 @@ class Splash extends Component {
                 <form>
                   <div className="form-group">
                     <label for="password">Create a password for your account:</label>
-                    <input type="text"
+                    <input type="password"
                       value={this.state.password}
                       onChange={this.handleInputChange}
                       name="password"
@@ -253,15 +256,15 @@ class Splash extends Component {
                       placeholder="Password" />
                   </div>
                   <button type="submit"
-                    className="btn btn-primary"
+                    className="modal-btn"
                     data-dismiss="modal"
                     disabled={!(this.state.password)}
                     onClick={this.handleFormSubmitQuote}
                   >
-                    Submit Quote
+                    Create Account
                     </button>
                   <button type="sumbit"
-                    className="btn btn-primary"
+                    className="modal-btn"
                     data-dismiss="modal"
                     onClick={this.handleFormSubmitQuote}
                   >

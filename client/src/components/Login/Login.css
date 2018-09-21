@@ -16,7 +16,7 @@
 }
 
 .modal-btn {
-  background-color: rgb(32, 55, 92);
+  background-color: #76323f;;
   color: #D5D5D5;
   border-radius: 4px;
   border: none;
@@ -25,12 +25,24 @@
   margin-top: 1rem;
 }
 
+.modal-btn:hover {
+  cursor: pointer;
+}
+
+.modal-btn:focus {
+  outline: 0;
+}
+
 .modal-backdrop {
     z-index: 0;
 }
 
+input {
+  background-color: rgb(195, 195, 195);
+}
+
 .close {
- color: #D5D5D5;
+ color: #373737;;
 }
 
 .close:focus {
@@ -38,5 +50,5 @@
 }
 
 .close:hover {
-  color: #C09F80
+  color: rgb(33, 59, 97);
 }
