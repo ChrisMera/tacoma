@@ -1,7 +1,10 @@
 .jumbotron {
   padding: 0;
+  margin-top: -20rem;
 }
 
 .splash-photo {
-  object-fit: contain;
+  object-fit: fill;
+  width: 100%;
+  height: auto;
 }

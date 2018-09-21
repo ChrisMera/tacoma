@@ -115,7 +115,7 @@ class Splash extends Component {
                     placeholder="" />
                   </div>
                     <button type="button" 
-                    className="btn btn-primary"
+                    className="modal-btn"
                     data-dismiss="modal"
                     data-toggle="modal" 
                     data-target="#requestQuoteContd"

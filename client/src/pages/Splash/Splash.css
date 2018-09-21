@@ -8,3 +8,20 @@
   margin: 20px auto;
   align-content: center;
 }
+
+.modal-header {
+  border-bottom: 1px solid #D5D5D5;
+}
+
+.modal-title {
+  color: #D5D5D5;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+}
+
+.modal-content {
+  background-color: rgba(25, 25, 25, 0.9);
+  color: #D5D5D5;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+}
