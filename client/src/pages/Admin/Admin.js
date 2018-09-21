@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import { Menu, MenuItem } from "../../components/Menu";
-import "./Admin.css";
 import { Col, Row, Container } from "../../components/Grid";
+import { Menu, MenuItem } from "../../components/Menu";
+import Maindash from "../../components/Maindash";
+import "./Admin.css";
 
 class Admin extends Component {
   state = {
@@ -18,7 +19,7 @@ class Admin extends Component {
             </Menu>
           </Col>
           <Col size="md-8">
-          test
+            <Maindash />
           </Col>
           <Col size="md-2">
           api

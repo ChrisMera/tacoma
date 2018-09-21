@@ -1,0 +1,10 @@
+.wrapper {
+  border: 1px solid #505050;
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+.dash-menu {
+  border: 1px solid red;
+  padding: 0;
+}

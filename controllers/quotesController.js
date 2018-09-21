@@ -6,7 +6,7 @@ module.exports = {
     db.Quote
       .find(req.query)
       .sort({ date: -1 })
-      .then(docs => res.json(docsl))
+      .then(docs => res.json(docs))
       .catch(err => res.status(422).json(err));
   },
   findById: function (req, res) {

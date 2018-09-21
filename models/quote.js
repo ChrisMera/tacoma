@@ -4,16 +4,15 @@ const Schema = mongoose.Schema;
 const quoteSchema = new Schema({
   name: String,
   company: String,
-  origin: { type: String, required: true },
-  destination: { type: String, required: true },
+  origin: String,
+  destination: String,
   freightType: String,
   estWeight: String,
   frequency: String,
   phone: String,
-  email: { type: String, required: true },
+  email: String,
   message: String,
-  password: { type: String },
-  date: { type: Date, default: Date.now }
+  password: String
 });
 
 const Quote = mongoose.model("Quote", quoteSchema);
