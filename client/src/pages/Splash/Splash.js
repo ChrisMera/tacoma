@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Carousel from "../../components/Carousel";
+import Jumbotron from "../../components/Jumbotron";
 // import Footer from "../../components/Footer";
 import API from "../../utils/API";
 // import { Link } from "react-router-dom";
@@ -53,7 +53,7 @@ class Splash extends Component {
   render() {
     return (
       <div>
-        <Carousel />
+        <Jumbotron />
         <div className="splash-container">
           <div className="splash-row">
             <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#requestQuote">

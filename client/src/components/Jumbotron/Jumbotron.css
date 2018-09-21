@@ -1,0 +1,7 @@
+.jumbotron {
+  padding: 0;
+}
+
+.splash-photo {
+  object-fit: contain;
+}
