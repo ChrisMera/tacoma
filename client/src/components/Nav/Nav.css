@@ -5,15 +5,15 @@
 }
 
 .navbar-brand {
-    margin: 0 78rem 0 3rem;
-    font-size: 22px;
+    margin: 0 75rem 0 2rem;
+    font-size: 32px;
     color: #D5D5D5;
     font-family: 'Open Sans', sans-serif;
     font-weight: 200;
 }
 
 .navbar-brand:hover {
-    color: #C09F80;
+    color: rgb(232,227, 174);
     cursor: default;
 }
 

@@ -3,7 +3,9 @@ import Jumbotron from "../../components/Jumbotron";
 // import Footer from "../../components/Footer";
 import API from "../../utils/API";
 // import { Link } from "react-router-dom";
-import { Col, Row, Container } from "../../components/Grid";
+import { Col, Row, Container, FloatLeft } from "../../components/Grid";
+import InfoText from "../../components/InfoText";
+import InfoImage from "../../components/InfoImage";
 import "./Splash.css";
 
 class Splash extends Component {
@@ -55,11 +57,20 @@ class Splash extends Component {
       <div>
         <Jumbotron />
           <Container fluid>
-            <Row>
-              <Col size="md-10">
-              Insert Image
-              </Col>
-            </Row>
+            <Col size="md-8">
+              <Row>
+              <InfoText heading="Who we are" text="The ship's all yours. If the scanners pick up anything, report it immediately. All right, let's go. Hey down there, could you give us a hand with this? TX-four-one-two. Why aren't you at your post? TX-four-one-two, do you copy? Take over. We've got a bad transmitter. I'll see what I can do. You know, between his howling and your blasting everything in sight, it's a wonder the whole station doesn't know we're here. Bring them on! I prefer a straight fight to all this sneaking around. We found the computer outlet, sir. Plug in. He should be able to interpret the entire Imperial computer network."/>
+              <InfoImage image="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9144d03989599996b0108a4fa2f32dca&auto=format&fit=crop&w=2250&q=80" alt="highway interchange at night"/>
+              </Row>
+              <Row>
+              <InfoImage image="https://images.unsplash.com/photo-1512217536414-d92543c79ca1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=daaaff038337c93168d2b5c78313e21d&auto=format&fit=crop&w=3240&q=80" alt="highway interchange at night" />
+              <InfoText heading="Who we are" text="The ship's all yours. If the scanners pick up anything, report it immediately. All right, let's go. Hey down there, could you give us a hand with this? TX-four-one-two. Why aren't you at your post? TX-four-one-two, do you copy? Take over. We've got a bad transmitter. "/>
+              </Row>
+              <Row>
+              <InfoText heading="Who we are" text="The ship's all yours. If the scanners pick up anything, report it immediately. All right, let's go. Hey down there, could you give us a hand with this? TX-four-one-two. Why aren't you at your post? TX-four-one-two, do you copy? Take over. We've got a bad transmitter. I'll see what I can do. You know, between his howling and your blasting everything in sight, it's a wonder the whole station doesn't know we're here. Bring them on! I prefer a straight fight to all this sneaking around. We found the computer outlet, sir. Plug in. He should be able to interpret the entire Imperial computer network."/>
+              <InfoImage image="https://images.unsplash.com/photo-1512217536414-d92543c79ca1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=daaaff038337c93168d2b5c78313e21d&auto=format&fit=crop&w=3240&q=80" alt="highway interchange at night"/>
+              </Row>
+            </Col>
           <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#requestQuote">
             Request A Quote
             </button>

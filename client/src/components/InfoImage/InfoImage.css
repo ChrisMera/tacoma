@@ -1,0 +1,6 @@
+.info-photo {
+  object-fit: fill;
+  width: 100%;
+  height: auto;
+  padding: 30px 0;
+}

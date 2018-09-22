@@ -1,0 +1,14 @@
+.info-text {
+  font-size: 22px;
+}
+
+.info-headings {
+  font-family: "Open Sans", Sans;
+  font-size: 32px;
+  border-bottom: 1px solid #76323f;
+  width: 30%;
+}
+
+/* .col-md-7 {
+  margin: 0 5px;
+} */
