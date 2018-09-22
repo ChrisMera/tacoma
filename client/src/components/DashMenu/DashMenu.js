@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Col, Row, Container } from "../Grid";
+import AdminModal from "../AdminModal";
 import API from"../../utils/API";
 import "./DashMenu.css";
 
@@ -22,7 +23,7 @@ class DashMenu extends Component {
   }
 
   loadQuotes = () => {
-    API.getQuotes()
+    API.getNewQuotes()
       .then(res => {
         console.log(res);
         this.setState({
@@ -59,6 +60,8 @@ class DashMenu extends Component {
           <p className="db-item">{this.state.phone}</p>
         </li>
       </ul>
+
+        <AdminModal modalTitle={this.state.companyName} />
      </Container>
     )
   }

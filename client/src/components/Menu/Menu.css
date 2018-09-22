@@ -24,3 +24,22 @@
   color: #d5d5d5;
   /* font-family: "Lato"; */
 }
+
+.menu-btn {
+    color: #D5D5D5;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    background-color: transparent;
+    margin-top: 5px;
+    padding: 0;
+}
+
+.menu-btn:hover {
+    color: #c09f80;
+    cursor: pointer;
+    
+}
+
+.menu-btn:focus {
+  outline: none;
+}

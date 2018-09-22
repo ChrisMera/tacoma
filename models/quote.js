@@ -12,7 +12,8 @@ const quoteSchema = new Schema({
   phone: String,
   email: String,
   message: String,
-  password: String
+  password: String,
+  new: { type: Boolean, default: true }
 });
 
 const Quote = mongoose.model("Quote", quoteSchema);

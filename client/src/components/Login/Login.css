@@ -4,7 +4,7 @@
     border: none;
     background-color: transparent;
     margin-top: 5px;
-    border: 1px solid #d5d5d5;
+    border: 1px solid rgba(213, 213, 213, 0.6);
     border-radius: 5px;
 }
 

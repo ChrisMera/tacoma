@@ -5,6 +5,10 @@ export default {
   getQuotes: function () {
     return axios.get("/api/quotes");
   },
+  // Gets all new quote requests
+  getNewQuotes: function () {
+    return axios.get("/api/quotes");
+  },
   // Gets the quote with the given id
   getQuote: function (id) {
     return axios.get("/api/quotes/" + id);

@@ -1,9 +1,12 @@
 import React from "react";
+import DashMenu from "../../components/DashMenu";
 
 export const MenuItem = props => (
   <div>
     <li className="menu-group-item">
-      <a className="menu-item" href="#">New Quote Requests</a>
+      <button type="button" class="menu-btn" data-toggle="modal" data-target="#newQuotesModal">
+        New Quote Requests
+      </button>
     </li>
     <li className="menu-group-item">
       <a className="menu-item" href="#">All Quote Requests</a>
@@ -18,4 +21,5 @@ export const MenuItem = props => (
       <a className="menu-item" href="#">Update Users</a>
     </li>
   </div>
+
 );
