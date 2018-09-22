@@ -7,7 +7,7 @@ class AdminModal extends Component {
 
   state = {
     quote: {},
-    companyName: "",
+    companyName: [],
     name: "",
     phone: "",
     email: "",
@@ -19,13 +19,15 @@ class AdminModal extends Component {
   };
 
   componentDidMount() {
-    
+    this.loadNewQuotes();
   }
 
   loadNewQuotes = () => {
     API.getNewQuotes()
       .then(res => {
-        console.log(res);
+        res.data.forEach(object => {
+          let company = object.company;
+        });
         this.setState({
           quote: res.data[0],
           companyName: res.data[0].company,
@@ -40,6 +42,7 @@ class AdminModal extends Component {
         })
       })
       .catch(err => console.log(err));
+      console.log(this.state.companyName);
   }
 
   render() {
@@ -49,7 +52,7 @@ class AdminModal extends Component {
       <div className="modal-dialog modal-dialog-centered" role="document">
         <div className="modal-content">
           <div className="modal-header">
-            <h5 className="modal-title" id="exampleModalCenterTitle">New Requests</h5>
+            <h5 className="modal-title" id="exampleModalCenterTitle">New Request From: {this.state.companyName}</h5>
             <button type="button" className="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>

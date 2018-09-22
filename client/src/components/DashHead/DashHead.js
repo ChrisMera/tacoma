@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
+import { Row, Col } from "../Grid";
 import "./DashHead.css";
 
 class DashHead extends Component {

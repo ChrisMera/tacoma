@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Col, Row, Container } from "../Grid";
 import DashHead from "../DashHead";
 import DashMenu from "../DashMenu";
+import GoogleMap from "../GoogleMap";
+import ProposeQuote from "../ProposeQuote";
 import "./Maindash.css";
 
 class Maindash extends Component {
@@ -11,13 +13,23 @@ class Maindash extends Component {
 
   render() {
     return(
-      <div>
+      <div className="dash-wrapper">
       <DashHead />
-        <div className="col-md-2 dash-menu">
+      <Row>
+        <Col size="md-2 quote-menu">
           <DashMenu>
 
           </DashMenu>
-        </div>
+        </Col>
+        <Col size="md-10 map">
+          <Row>
+            <GoogleMap />
+          </Row>
+        
+            <ProposeQuote />
+         
+        </Col>
+      </Row>
       </div>
     )
   }

@@ -4,7 +4,7 @@ import "./Menu.css";
 export const Menu = ({ children }) => {
   return (
     <div className="menu-overflow-container">
-      <p className="menu-heading">Menu</p>
+      <h5 className="menu-heading">Menu</h5>
       <ul className="menu-group">
         {children}
       </ul>

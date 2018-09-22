@@ -7,7 +7,8 @@
 .menu-heading {
   color: #c09f80;
   border-bottom: 1px solid #c09f80;
-  font-size: 18px;
+  /* font-size: 18px; */
+  font-family: 'Open Sans', sans-serif;
 }
 
 .menu-group {

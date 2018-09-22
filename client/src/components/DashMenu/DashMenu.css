@@ -1,4 +1,12 @@
 .menu-list {
   list-style-type: none;
-  padding: 0;
+  padding-left: 1rem;
+}
+
+.quote-title {
+  margin-top: 1rem;
+}
+
+.col-quote-menu {
+  border-right: 1px solid black;
 }
