@@ -10,7 +10,7 @@
 }
 
 .modal-header {
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 1px solid #373737;
 }
 
 .modal-title {
@@ -20,7 +20,7 @@
 }
 
 .modal-content {
-  background-color: rgba(244, 244, 244, 0.9);
+  background-color: rgba(244, 244, 244, 1.0);
   color: #373737;;
   font-family: 'Open Sans', sans-serif;
   font-weight: 200;
@@ -33,7 +33,7 @@
   background-color: #f4f4f4;
 }
 
-.col-md-8 {
-  margin: 20px auto;
+.col-md-9 {
+  margin: 15px auto;
   /* border: 1px solid black; */
 }

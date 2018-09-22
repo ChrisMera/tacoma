@@ -5,7 +5,7 @@ import Login from "../Login";
 
 const Nav = () => (
   <nav className="navbar sticky-top navbar-expand-lg" id="custom-navbar">
-    <a className="navbar-brand" href="/">Tacoma Transport</a>
+    <p className="navbar-brand">Tacoma Transport</p>
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
       {/* <span className="navbar-toggler-icon">Menu</span> */}
@@ -13,6 +13,11 @@ const Nav = () => (
 
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav">
+        <li className="nav-item">
+          <button type="button" className="quote-btn" data-toggle="modal" data-target="#requestQuote">
+            Request Quote
+          </button>
+        </li>
         <li className="nav-item">
             <Login />
             {/* <Logout /> */}

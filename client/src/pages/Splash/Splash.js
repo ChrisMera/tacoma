@@ -57,23 +57,20 @@ class Splash extends Component {
       <div>
         <Jumbotron />
           <Container fluid>
-            <Col size="md-8">
+            <Col size="md-9">
               <Row>
-              <InfoText heading="Who we are" text="The ship's all yours. If the scanners pick up anything, report it immediately. All right, let's go. Hey down there, could you give us a hand with this? TX-four-one-two. Why aren't you at your post? TX-four-one-two, do you copy? Take over. We've got a bad transmitter. I'll see what I can do. You know, between his howling and your blasting everything in sight, it's a wonder the whole station doesn't know we're here. Bring them on! I prefer a straight fight to all this sneaking around. We found the computer outlet, sir. Plug in. He should be able to interpret the entire Imperial computer network."/>
-              <InfoImage image="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9144d03989599996b0108a4fa2f32dca&auto=format&fit=crop&w=2250&q=80" alt="highway interchange at night"/>
+              <InfoText heading="Who We Are" text="The ship's all yours. If the scanners pick up anything, report it immediately. All right, let's go. Hey down there, could you give us a hand with this? TX-four-one-two. Why aren't you at your post? TX-four-one-two, do you copy? Take over. We've got a bad transmitter. I'll see what I can do. You know, between his howling and your blasting everything in sight, it's a wonder the whole station doesn't know we're here. Bring them on! I prefer a straight fight to all this sneaking around. We found the computer outlet, sir. Plug in. He should be able to interpret the entire Imperial computer network."/>
+              <InfoImage image="https://images.unsplash.com/photo-1522165078649-823cf4dbaf46?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=756f069c98c96a701453b1e27630e961&auto=format&fit=crop&w=2250&q=80" alt="highway interchange at night"/>
               </Row>
               <Row>
               <InfoImage image="https://images.unsplash.com/photo-1512217536414-d92543c79ca1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=daaaff038337c93168d2b5c78313e21d&auto=format&fit=crop&w=3240&q=80" alt="highway interchange at night" />
-              <InfoText heading="Who we are" text="The ship's all yours. If the scanners pick up anything, report it immediately. All right, let's go. Hey down there, could you give us a hand with this? TX-four-one-two. Why aren't you at your post? TX-four-one-two, do you copy? Take over. We've got a bad transmitter. "/>
+              <InfoText heading="We'll Deliver for You" text="We count thirty Rebel ships, Lord Vader. But they're so small they're evading our turbo-lasers! We'll have to destroy them ship to ship. Get the crews to their fighters. Luke, let me know when you're going in. I'm on my way in now... Watch yourself! There's a lot of fire coming from the right side of that deflection tower. I'm on it. Squad leaders, we've picked up a new group of signals. Enemy fighters coming your way."/>
               </Row>
               <Row>
-              <InfoText heading="Who we are" text="The ship's all yours. If the scanners pick up anything, report it immediately. All right, let's go. Hey down there, could you give us a hand with this? TX-four-one-two. Why aren't you at your post? TX-four-one-two, do you copy? Take over. We've got a bad transmitter. I'll see what I can do. You know, between his howling and your blasting everything in sight, it's a wonder the whole station doesn't know we're here. Bring them on! I prefer a straight fight to all this sneaking around. We found the computer outlet, sir. Plug in. He should be able to interpret the entire Imperial computer network."/>
-              <InfoImage image="https://images.unsplash.com/photo-1512217536414-d92543c79ca1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=daaaff038337c93168d2b5c78313e21d&auto=format&fit=crop&w=3240&q=80" alt="highway interchange at night"/>
+              <InfoText heading="World Class Customer Service" text="The Death Star plans are not in the main computer. Where are those transmissions you intercepted? What have you done with those plans? We intercepted no transmissions. Aaah....This is a consular ship. Were on a diplomatic mission. If this is a consular ship...were is the Ambassador? Commander, tear this ship apart until you've found those plans and bring me the Ambassador. I want her alive! There she is! Set for stun! She'll be all right. Inform Lord Vader we have a prisoner."/>
+              <InfoImage image="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9144d03989599996b0108a4fa2f32dca&auto=format&fit=crop&w=2250&q=80" alt="highway interchange at night"/>
               </Row>
             </Col>
-          <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#requestQuote">
-            Request A Quote
-            </button>
           </Container>
 
         <div className="modal" id="requestQuote" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
