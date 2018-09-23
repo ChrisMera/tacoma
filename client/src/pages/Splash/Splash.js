@@ -3,7 +3,7 @@ import Jumbotron from "../../components/Jumbotron";
 // import Footer from "../../components/Footer";
 import API from "../../utils/API";
 // import { Link } from "react-router-dom";
-import { Col, Row, Container, FloatLeft } from "../../components/Grid";
+import { Col, Row, Container } from "../../components/Grid";
 import InfoText from "../../components/InfoText";
 import InfoImage from "../../components/InfoImage";
 import "./Splash.css";

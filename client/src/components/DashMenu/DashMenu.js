@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-import { Col, Row, Container } from "../Grid";
-import AdminModal from "../AdminModal";
+import { Container } from "../Grid";
 import API from"../../utils/API";
 import "./DashMenu.css";
 
 class DashMenu extends Component {
   state = {
-    quote: {},
+    quote: [],
     companyName: "",
     name: "",
     phone: "",
@@ -27,7 +26,7 @@ class DashMenu extends Component {
       .then(res => {
         console.log(res);
         this.setState({
-          quote: res.data[0],
+          quote: res.data,
           companyName: res.data[0].company,
           name: res.data[0].name,
           phone: res.data[0].phone,
@@ -42,10 +41,10 @@ class DashMenu extends Component {
       .catch(err => console.log(err));
   }
 
+
   render() {
-    console.log(this.state.quote);
     return (
-    <Container fluid>
+      <Container fluid>
       <ul className="menu-list">
         <li>
           <p className="quote-title">Company Name:</p>
@@ -85,10 +84,40 @@ class DashMenu extends Component {
         </li>
       </ul>
 
-        <AdminModal modalTitle={this.state.companyName} />
+        <div className="modal" id="newQuotesModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div className="modal-dialog modal-dialog-centered" role="document">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id="exampleModalCenterTitle">New Request From:</h5>
+                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div className="modal-body">
+                {this.state.quote.map(companyName => (
+                  <button type="button" className="modal-btn">{companyName.company}</button>
+                ))}
+
+              </div>
+              <div className="modal-footer">
+                <button type="button" className="modal-btn" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
      </Container>
     )
   }
 }
+
+// class ModalButton extends Component {
+//   render() {
+//     return(
+//       this.props.text.map(company => {
+//         <button type="button" className="modal-btn">company.company</button>}
+//         )
+//     )
+//   }
+// }
 
 export default DashMenu;

@@ -1,73 +1,28 @@
 import React, { Component } from "react";
 import DashMenu from "../../components/DashMenu";
-import API from "../../utils/API";
 import "./AdminModal.css";
 
-class AdminModal extends Component {
-
-  state = {
-    quote: {},
-    companyName: [],
-    name: "",
-    phone: "",
-    email: "",
-    origin: "",
-    destination: "",
-    freightType: "",
-    weight: "",
-    frequency: ""
-  };
-
-  componentDidMount() {
-    this.loadNewQuotes();
-  }
-
-  loadNewQuotes = () => {
-    API.getNewQuotes()
-      .then(res => {
-        res.data.forEach(object => {
-          let company = object.company;
-        });
-        this.setState({
-          quote: res.data[0],
-          companyName: res.data[0].company,
-          name: res.data[0].name,
-          phone: res.data[0].phone,
-          email: "",
-          origin: "",
-          destination: "",
-          freightType: "",
-          weight: "",
-          frequency: ""
-        })
-      })
-      .catch(err => console.log(err));
-      console.log(this.state.companyName);
-  }
-
-  render() {
-    return(
-
-    <div className="modal" id="newQuotesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div className="modal-dialog modal-dialog-centered" role="document">
-        <div className="modal-content">
-          <div className="modal-header">
-            <h5 className="modal-title" id="exampleModalCenterTitle">New Request From: {this.state.companyName}</h5>
-            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div className="modal-body">
-            ...
+const AdminModal = props => (
+  <div className="modal" id="newQuotesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div className="modal-dialog modal-dialog-centered" role="document">
+      <div className="modal-content">
+        <div className="modal-header">
+          <h5 className="modal-title" id="exampleModalCenterTitle">New Request From:</h5>
+          <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-          <div classNAme="modal-footer">
-            <button type="button" className="modal-btn" data-dismiss="modal">Close</button>
-          </div>
+        <div className="modal-body">
+        
+            <button type="button" className="modal-btn">{props.modalTitle}</button>
+        
+        </div>
+        <div classNAme="modal-footer">
+          <button type="button" className="modal-btn" data-dismiss="modal">Close</button>
         </div>
       </div>
-    </div>
-    )
-  }
-};
+    </div> 
+  </div>
+);
 
 export default AdminModal;
