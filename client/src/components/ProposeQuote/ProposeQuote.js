@@ -18,9 +18,8 @@ class ProposeQoute extends Component {
   };
 
   updateQuote = id => {
-    API.updateQuote({
-      quote: this.state.quote
-    })
+    API.updateQuote(id)
+      
   }
 
   handleSubmit = event => {

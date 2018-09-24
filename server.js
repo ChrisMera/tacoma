@@ -15,8 +15,13 @@ if (process.env.NODE_ENV === "production") {
 // Add routes, both API and view
 app.use(routes);
 
-// Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/tacomaTransport");
+if (process.env.MONGODB_URI) {
+  // This executes if this is being executed in your heroku app
+  mongoose.connect(process.env.MONGODB_URI);
+} else {
+  // Connect to the Mongo DB
+  mongoose.connect("mongodb://localhost/tacomaTransport");
+}
 
 // Start the API server
 app.listen(PORT, function () {

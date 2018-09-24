@@ -5,8 +5,10 @@ import "./GoogleMap.css";
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 export default class Map extends Component {
   static defaultProps = {
-    center: { lat: 40.7446790, lng: -73.9485420 },
-    zoom: 11
+    center: {
+      lat: 30.455109,
+      lng: -84.253419 },
+      zoom: 6
   }
   render() {
     return (
