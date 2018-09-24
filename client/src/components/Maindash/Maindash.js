@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Col, Row } from "../Grid";
 import DashHead from "../DashHead";
 import DashMenu from "../DashMenu";
-import GoogleMap from "../GoogleMap";
+// import GoogleMap from "../GoogleMap";
 import ProposeQuote from "../ProposeQuote";
 import "./Maindash.css";
 
@@ -23,7 +23,7 @@ class Maindash extends Component {
         </Col>
         <Col size="md-10 map">
           <Row>
-            <GoogleMap />
+            {/* <GoogleMap /> */}
           </Row>
         
             <ProposeQuote />

@@ -21,7 +21,8 @@ class Splash extends Component {
     phone: "",
     email: "",
     message: "",
-    password: ""
+    password: "",
+    quote: ""
   };
 
   handleInputChange = event => {
@@ -45,7 +46,8 @@ class Splash extends Component {
       phone: this.state.phone,
       email: this.state.email,
       message: this.state.message,
-      password: this.state.password
+      password: this.state.password,
+      quote: this.state.quote
     })
       .then(res => console.log("Working" + res))
       .catch(err => console.log(err));

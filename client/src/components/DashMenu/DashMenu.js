@@ -52,15 +52,15 @@ class DashMenu extends Component {
         this.setState({
           newQuoteLoad: res.data
         })
-        console.log(this.state.newQuoteLoad)
+        // console.log(this.state.nsewQuoteLoad)
       })
   }
   
-  handleQuoteLoad = id => {
-    const newQuote = this.state.quotes.find(newQuote => newQuote._id === id);
-    // const id = this.state.
-    this.loadQuote(newQuote);
-  }
+  // handleQuoteLoad = id => {
+  //   const newQuote = this.state.quotes.find(newQuote => newQuote._id === id);
+  //   // const id = this.state.
+  //   this.loadQuote(newQuote);
+  // }
 
   render() {
     // let { quote } = this.state
@@ -97,7 +97,7 @@ class DashMenu extends Component {
         </li>
           <li>
             <p className="quote-title">Weight:</p>
-            <p className="quote-item">{this.state.newQuoteLoad.weight}</p>
+            <p className="quote-item">{this.state.newQuoteLoad.estWeight}</p>
           </li>
         <li>
           <p className="quote-title">Frequency:</p>
