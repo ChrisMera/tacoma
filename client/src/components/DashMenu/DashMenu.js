@@ -5,16 +5,18 @@ import "./DashMenu.css";
 
 class DashMenu extends Component {
   state = {
-    quote: [],
-    companyName: "",
-    name: "",
-    phone: "",
-    email: "",
-    origin: "",
-    destination: "",
-    freightType: "",
-    weight: "",
-    frequency: ""
+    quotes: [],
+    newQuoteLoad: [],
+    q: "hello"
+    // companyName: "",
+    // name: "",
+    // phone: "",
+    // email: "",
+    // origin: "",
+    // destination: "",
+    // freightType: "",
+    // weight: "",
+    // frequency: ""
   };
 
   componentDidMount() {
@@ -24,9 +26,9 @@ class DashMenu extends Component {
   loadQuotes = () => {
     API.getNewQuotes()
       .then(res => {
-        console.log(res);
+        // console.log(res);
         this.setState({
-          quote: res.data
+          quotes: res.data
           // companyName: res.data[0].company,
           // name: res.data[0].name,
           // phone: res.data[0].phone,
@@ -42,57 +44,64 @@ class DashMenu extends Component {
       .catch(err => console.log(err));
   }
 
-  loadQuote = () => {
-    API.getQuote()
+  loadQuote = id => {
+    // const quote = this.state.q
+    API.getQuote(id)
       .then(res => {
         // console.log(res);
         this.setState({
-          quote: res.data
+          newQuoteLoad: res.data
         })
-        console.log(this.state.quote)
+        console.log(this.state.newQuoteLoad)
       })
   }
-
+  
+  handleQuoteLoad = id => {
+    const newQuote = this.state.quotes.find(newQuote => newQuote._id === id);
+    // const id = this.state.
+    this.loadQuote(newQuote);
+  }
 
   render() {
+    // let { quote } = this.state
     return (
       <Container fluid>
       <ul className="menu-list">
         <li>
           <p className="quote-title">Company Name:</p>
-          <p className="quote-item">{this.state.companyName}</p>
+          <p className="quote-item">{this.state.newQuoteLoad.company}</p>
         </li>
         <li>
           <p className="quote-title">Name:</p>
-          <p className="quote-item">{this.state.name}</p>
+          <p className="quote-item">{this.state.newQuoteLoad.name}</p>
         </li>
         <li>
           <p className="quote-title">Phone:</p>
-          <p className="quote-item">{this.state.phone}</p>
+          <p className="quote-item">{this.state.newQuoteLoad.phone}</p>
         </li>
         <li>
           <p className="quote-title">Email:</p>
-          <p className="quote-item">{this.state.email}</p>
+          <p className="quote-item">{this.state.newQuoteLoad.email}</p>
         </li>
         <li>
           <p className="quote-title">Origin:</p>
-          <p className="quote-item">{this.state.origin}</p>
+          <p className="quote-item">{this.state.newQuoteLoad.origin}</p>
         </li>
         <li>
           <p className="quote-title">Destination:</p>
-          <p className="quote-item">{this.state.destination}</p>
+          <p className="quote-item">{this.state.newQuoteLoad.destination}</p>
         </li>
         <li>
           <p className="quote-title">Freight Type:</p>
-          <p className="quote-item">{this.state.freightType}</p>
+          <p className="quote-item">{this.state.newQuoteLoad.freightType}</p>
         </li>
           <li>
             <p className="quote-title">Weight:</p>
-            <p className="quote-item">{this.state.weight}</p>
+            <p className="quote-item">{this.state.newQuoteLoad.weight}</p>
           </li>
         <li>
           <p className="quote-title">Frequency:</p>
-          <p className="quote-item">{this.state.frequency}</p>
+          <p className="quote-item">{this.state.newQuoteLoad.frequency}</p>
         </li>
       </ul>
 
@@ -106,8 +115,9 @@ class DashMenu extends Component {
                 </button>
               </div>
               <div className="modal-body">
-                {this.state.quote.map(companyName => (
-                  <a key={companyName._id} href={companyName._id} onClick={() => this.loadQuote(companyName._id)} className="modal-btn" data-dismiss="modal">{companyName.company}</a>
+                {this.state.quotes.map(newQuote => (
+                  // console.log(companyName);
+                  <a key={newQuote._id} _id={newQuote._id} href={newQuote._id} onClick={() => this.loadQuote(newQuote._id)} className="modal-btn" data-dismiss="modal">{newQuote.company}</a>
                 ))}
 
               </div>
