@@ -26,19 +26,31 @@ class DashMenu extends Component {
       .then(res => {
         console.log(res);
         this.setState({
-          quote: res.data,
-          companyName: res.data[0].company,
-          name: res.data[0].name,
-          phone: res.data[0].phone,
-          email: res.data[0].email,
-          origin: res.data[0].origin,
-          destination: res.data[0].destination,
-          freightType: res.data[0].freightType,
-          weight: res.data[0].estWeight,
-          frequency: res.data[0].frequency
+          quote: res.data
+          // companyName: res.data[0].company,
+          // name: res.data[0].name,
+          // phone: res.data[0].phone,
+          // email: res.data[0].email,
+          // origin: res.data[0].origin,
+          // destination: res.data[0].destination,
+          // freightType: res.data[0].freightType,
+          // weight: res.data[0].estWeight,
+          // frequency: res.data[0].frequency
         })
+        // console.log(this.state.quote)
       })
       .catch(err => console.log(err));
+  }
+
+  loadQuote = () => {
+    API.getQuote()
+      .then(res => {
+        // console.log(res);
+        this.setState({
+          quote: res.data
+        })
+        console.log(this.state.quote)
+      })
   }
 
 
@@ -95,7 +107,7 @@ class DashMenu extends Component {
               </div>
               <div className="modal-body">
                 {this.state.quote.map(companyName => (
-                  <button type="button" className="modal-btn">{companyName.company}</button>
+                  <a key={companyName._id} href={companyName._id} onClick={() => this.loadQuote(companyName._id)} className="modal-btn" data-dismiss="modal">{companyName.company}</a>
                 ))}
 
               </div>

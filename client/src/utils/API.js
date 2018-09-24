@@ -13,6 +13,10 @@ export default {
   getQuote: function (id) {
     return axios.get("/api/quotes/" + id);
   },
+  // Updates the quote with the given id
+  updateQuote: function (id) {
+    return axios.put("/api/quotes/" + id);
+  },
   // Deletes the quote with the given id
   deleteQuote: function (id) {
     return axios.delete("/api/quotes/" + id);

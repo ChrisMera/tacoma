@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Col, Row, Container } from "../../components/Grid";
 import { Menu, MenuItem } from "../../components/Menu";
 import Maindash from "../../components/Maindash";
+import FuelAPI from "../../components/FuelAPI";
 import "./Admin.css";
 
 class Admin extends Component {
@@ -22,7 +23,7 @@ class Admin extends Component {
             <Maindash />
           </Col>
           <Col size="md-2">
-          api
+            <FuelAPI />
           </Col>
         </Row>
       </Container>
