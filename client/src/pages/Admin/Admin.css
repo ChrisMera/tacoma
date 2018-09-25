@@ -11,9 +11,10 @@
   padding: 0;
 }
 
-/* .row {
-  height: 88vh;
-} */
+.api-info {
+  padding: 0;
+  margin-left: -20px;
+}
 
 .api-card {
   border: 1px solid green;

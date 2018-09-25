@@ -1,4 +1,15 @@
 .Api-wrapper {
   border: 1px solid #d5d5d5;
-  margin-top: 1rem;
+  margin: 1rem;
+}
+
+.api-heading {
+  font-family: "Open Sans";
+  padding: 1rem 0 0 0.5rem;
+  height: 42px;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.api-text {
+  padding-left: 2rem;
 }

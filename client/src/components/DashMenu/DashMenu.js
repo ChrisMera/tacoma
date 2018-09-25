@@ -7,16 +7,6 @@ class DashMenu extends Component {
   state = {
     quotes: [],
     newQuoteLoad: [],
-    q: "hello"
-    // companyName: "",
-    // name: "",
-    // phone: "",
-    // email: "",
-    // origin: "",
-    // destination: "",
-    // freightType: "",
-    // weight: "",
-    // frequency: ""
   };
 
   componentDidMount() {
@@ -26,44 +16,23 @@ class DashMenu extends Component {
   loadQuotes = () => {
     API.getNewQuotes()
       .then(res => {
-        // console.log(res);
         this.setState({
           quotes: res.data
-          // companyName: res.data[0].company,
-          // name: res.data[0].name,
-          // phone: res.data[0].phone,
-          // email: res.data[0].email,
-          // origin: res.data[0].origin,
-          // destination: res.data[0].destination,
-          // freightType: res.data[0].freightType,
-          // weight: res.data[0].estWeight,
-          // frequency: res.data[0].frequency
         })
-        // console.log(this.state.quote)
       })
       .catch(err => console.log(err));
   }
 
   loadQuote = id => {
-    // const quote = this.state.q
     API.getQuote(id)
       .then(res => {
-        // console.log(res);
         this.setState({
           newQuoteLoad: res.data
         })
-        // console.log(this.state.nsewQuoteLoad)
       })
   }
-  
-  // handleQuoteLoad = id => {
-  //   const newQuote = this.state.quotes.find(newQuote => newQuote._id === id);
-  //   // const id = this.state.
-  //   this.loadQuote(newQuote);
-  // }
 
   render() {
-    // let { quote } = this.state
     return (
       <Container fluid>
       <ul className="menu-list">

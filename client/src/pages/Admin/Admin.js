@@ -22,7 +22,7 @@ class Admin extends Component {
           <Col size="md-8">
             <Maindash />
           </Col>
-          <Col size="md-2">
+          <Col size="md-2 api-info">
             <FuelAPI />
           </Col>
         </Row>
