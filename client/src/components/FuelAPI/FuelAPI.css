@@ -1,15 +1,16 @@
 .Api-wrapper {
-  border: 1px solid #d5d5d5;
   margin: 1rem;
 }
 
 .api-heading {
   font-family: "Open Sans";
-  padding: 1rem 0 0 0.5rem;
-  height: 42px;
+  padding: 1.5rem 0 1rem 0;
   border-bottom: 1px solid #d5d5d5;
+  text-align: center;
 }
 
 .api-text {
-  padding-left: 2rem;
+  font-family: "Open Sans";
+  text-align: center;
+  font-size: 22px;
 }

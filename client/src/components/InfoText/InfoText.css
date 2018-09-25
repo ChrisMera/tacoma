@@ -4,9 +4,10 @@
 
 .info-headings {
   font-family: "Open Sans", Sans;
-  font-size: 32px;
+  font-size: 35px;
   border-bottom: 1px solid #76323f;
   width: 60%;
+  margin-bottom: 1rem;
 }
 
 /* .col-md-7 {

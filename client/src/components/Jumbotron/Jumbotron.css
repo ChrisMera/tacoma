@@ -9,9 +9,9 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3rem;
-  /* border: 1px solid rgba(10, 10, 10, 0.8); */
+  border: 1px solid #d5d5d5;
   border-top: none;
-  /* border-radius: 0 0 10px 10px; */
+  border-radius: 0 0 10px 10px;
   width: 73%;
   height: auto;
 }

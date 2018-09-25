@@ -1,18 +1,17 @@
 import React, { Component } from "react";
 import { Col, Row, Container } from "../../components/Grid";
 import { Menu, MenuItem } from "../../components/Menu";
+import Nav from "../../components/Nav";
 import Maindash from "../../components/Maindash";
 import FuelAPI from "../../components/FuelAPI";
 import "./Admin.css";
 
 class Admin extends Component {
-  state = {
-
-  };
 
   render() {
-    return (
+    return ( 
       <Container fluid>
+      <Nav />
         <Row>
           <Col size="md-2">
             <Menu>

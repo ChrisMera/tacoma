@@ -10,12 +10,3 @@
 .container-fluid {
   padding: 0;
 }
-
-.api-info {
-  padding: 0;
-  margin-left: -20px;
-}
-
-.api-card {
-  border: 1px solid green;
-}

@@ -86,7 +86,7 @@ class DashMenu extends Component {
               <div className="modal-body">
                 {this.state.quotes.map(newQuote => (
                   // console.log(companyName);
-                  <a key={newQuote._id} _id={newQuote._id} href={newQuote._id} onClick={() => this.loadQuote(newQuote._id)} className="modal-btn" data-dismiss="modal">{newQuote.company}</a>
+                  <button className="new-quote-btn"><a key={newQuote._id} _id={newQuote._id} href={newQuote._id} className="new-quote-link" onClick={() => this.loadQuote(newQuote._id)} data-dismiss="modal">{newQuote.company}</a></button>
                 ))}
 
               </div>

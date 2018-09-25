@@ -15,7 +15,7 @@ class Maindash extends Component {
     return(
       <div className="dash-wrapper">
       <DashHead />
-      <Row>
+      <div className="row dash-row">
         <Col size="md-2 quote-menu">
           <DashMenu>
 
@@ -29,7 +29,7 @@ class Maindash extends Component {
             <ProposeQuote />
          
         </Col>
-      </Row>
+      </div>
       </div>
     )
   }

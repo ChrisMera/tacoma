@@ -16,9 +16,9 @@ class DashHead extends Component {
 
   render() {
     return (
-      <div className="user">
+      <p className="user">
         Welcome User
-      </div>
+      </p>
     );
   }
 }

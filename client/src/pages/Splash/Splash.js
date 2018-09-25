@@ -4,6 +4,7 @@ import Jumbotron from "../../components/Jumbotron";
 import API from "../../utils/API";
 // import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../../components/Grid";
+import Nav from "../../components/Nav";
 import InfoText from "../../components/InfoText";
 import InfoImage from "../../components/InfoImage";
 import "./Splash.css";
@@ -57,6 +58,7 @@ class Splash extends Component {
   render() {
     return (
       <div>
+        <Nav />
         <Jumbotron />
           <Container fluid>
             <Col size="md-9">
