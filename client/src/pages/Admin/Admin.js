@@ -4,6 +4,7 @@ import { Menu, MenuItem } from "../../components/Menu";
 import Nav from "../../components/Nav";
 import Maindash from "../../components/Maindash";
 import FuelAPI from "../../components/FuelAPI";
+import Footer from "../../components/Footer";
 import "./Admin.css";
 
 class Admin extends Component {
@@ -25,6 +26,7 @@ class Admin extends Component {
             <FuelAPI />
           </Col>
         </Row>
+        <Footer />
       </Container>
     )
   }
