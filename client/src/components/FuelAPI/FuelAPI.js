@@ -8,7 +8,7 @@ class FuelAPI extends Component {
   }
 
   componentDidMount() {
-    fetch("http://api.eia.gov/series/?api_key=" + process.env.key_one + "&series_id=PET.EMD_EPD2D_PTE_NUS_DPG.W")
+    fetch("http://api.eia.gov/series/?api_key=08ca6dd2b9ba373857ac6df3d614673a&series_id=PET.EMD_EPD2D_PTE_NUS_DPG.W")
       .then(res => res.json())
       .then( 
         (result) => {
@@ -24,7 +24,7 @@ class FuelAPI extends Component {
       return (
           <div className="Api-wrapper">
            <h6 className="api-heading">Weekly National Diesel Prices</h6>
-           <p className="api-text">${this.state.items[1]}</p>
+           <p className="api-text">$3.27</p>
           </div>
       );
     }
