@@ -8,7 +8,7 @@ class FuelAPI extends Component {
   }
 
   componentDidMount() {
-    fetch("http://api.eia.gov/series/?api_key=08ca6dd2b9ba373857ac6df3d614673a&series_id=PET.EMD_EPD2D_PTE_NUS_DPG.W")
+    fetch("http://api.eia.gov/series/?api_key=" + process.env.key_one + "&series_id=PET.EMD_EPD2D_PTE_NUS_DPG.W")
       .then(res => res.json())
       .then( 
         (result) => {
