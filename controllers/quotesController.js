@@ -2,13 +2,6 @@ const db = require("../models");
 
 // Defining methods for the quotesController
 module.exports = {
-  // findAll: function (req, res) {
-  //   db.Quote
-  //     .find(req.query)
-  //     .sort({ date: -1 })
-  //     .then(docs => res.json(docs))
-  //     .catch(err => res.status(422).json(err));
-  // },
   findAll: function (req, res) {
     db.Quote
       .find({ new: {$eq: true}})

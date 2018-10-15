@@ -30,7 +30,6 @@ class Admin extends Component {
       </Container>
     )
   }
-
 }
 
 export default Admin;

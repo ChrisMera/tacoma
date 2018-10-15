@@ -8,15 +8,12 @@ import Splash from "./pages/Splash";
 import Admin from "./pages/Admin";
 import NoMatch from "./pages/NoMatch";
 import Footer from "./components/Footer";
-// import logo from './logo.svg';
-// import './App.css';
 
 class App extends Component {
   render() {
     return (
       <Router>
         <div>
-          {/* <Nav /> */}
           <Switch>
             <Route exact path="/" component={Splash} />
             <Route exact path="/admin" component={Admin} />

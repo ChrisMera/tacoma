@@ -136,7 +136,6 @@ class Splash extends Component {
                     data-toggle="modal" 
                     data-target="#requestQuoteContd"
                     disabled={!(this.state.origin && this.state.destination)}
-                    // onClick={this.handleFormSubmitInitial}
                     >
                     Next <i class="fas fa-arrow-right"></i>
                     </button>
@@ -229,7 +228,6 @@ class Splash extends Component {
                     data-toggle="modal"
                     data-target="#createAccount"
                     disabled={!(this.state.email)}
-                    // onClick={this.handleFormSubmitInitial}
                   >
                     Submit
                     </button>
