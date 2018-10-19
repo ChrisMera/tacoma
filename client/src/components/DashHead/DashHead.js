@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import "./DashHead.css";
 
 class DashHead extends Component {
