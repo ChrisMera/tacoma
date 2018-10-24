@@ -61,12 +61,12 @@ class Splash extends Component {
           <Container fluid>
             <Col size="md-9">
               <Row>
-              <InfoText heading="Who We Are" text="Tacoma Transport is a provider of dry van and refrigerated truckload transportation services. We are committed to safety, service, and damage-free delivery within our walls and on the road."/>
+              <InfoText heading="Who We Are" text="Tacoma Transport, Inc. began operations in 2011 transporting dedicated van goods up and down the east coast from Florida to Massachusetts. Arcenio Mera, founder, began with the same entrepreneurial, enthusiastic spirit that is one of Tacoma's core values today. In 2013 Tacoma expanded operations when, in addition to it's dedicated van services, began transporting temperature controlled shipments throughout the southeast and northeast. We have extensive experience in doing business with freight brokers and shippers alike. Our objective is to operate truckload businesses that are industry leading while providing cost-effective solutions for our customers."/>
               <InfoImage image="https://images.unsplash.com/photo-1522165078649-823cf4dbaf46?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=756f069c98c96a701453b1e27630e961&auto=format&fit=crop&w=2250&q=80" alt="highway interchange at night"/>
               </Row>
               <Row>
               <InfoImage image="https://images.unsplash.com/photo-1512217536414-d92543c79ca1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=daaaff038337c93168d2b5c78313e21d&auto=format&fit=crop&w=3240&q=80" alt="highway interchange at night" />
-              <InfoText heading="We'll Deliver for You" text="."/>
+              <InfoText heading="We'll Deliver for You" text="Tacoma Transport, Inc. is a provider of dry van and refrigerated truckload transportation services.  We are committed to safety, service, and damage-free delivery on the road."/>
               </Row>
               <Row>
               <InfoText heading="World Class Customer Service" text="We provide outstanding service throughout the US with unparallled capacity to meet your seasonal demands and surges."/>
