@@ -62,15 +62,15 @@ class Splash extends Component {
             <Col size="md-9">
               <Row>
               <InfoText heading="Who We Are" text="Tacoma Transport, Inc. began operations in 2011 transporting dedicated van goods up and down the east coast from Florida to Massachusetts. Arcenio Mera, founder, began with the same entrepreneurial, enthusiastic spirit that is one of Tacoma's core values today. In 2013 Tacoma expanded operations when, in addition to it's dedicated van services, began transporting temperature controlled shipments throughout the southeast and northeast. We have extensive experience in doing business with freight brokers and shippers alike. Our objective is to operate truckload businesses that are industry leading while providing cost-effective solutions for our customers."/>
-              <InfoImage image="https://images.unsplash.com/photo-1522165078649-823cf4dbaf46?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=756f069c98c96a701453b1e27630e961&auto=format&fit=crop&w=2250&q=80" alt="highway interchange at night"/>
+              <InfoImage image="https://images.unsplash.com/photo-1522165078649-823cf4dbaf46?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=756f069c98c96a701453b1e27630e961&auto=format&fit=crop&w=2250&q=80" alt="bright office"/>
               </Row>
               <Row>
               <InfoImage image="https://images.unsplash.com/photo-1512217536414-d92543c79ca1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=daaaff038337c93168d2b5c78313e21d&auto=format&fit=crop&w=3240&q=80" alt="highway interchange at night" />
-              <InfoText heading="We'll Deliver for You" text="Tacoma Transport, Inc. is a provider of dry van and refrigerated truckload transportation services.  We are committed to safety, service, and damage-free delivery on the road."/>
+              <InfoText heading="We'll Deliver for You" text="Tacoma Transport, Inc. is a provider of dry van and refrigerated truckload transportation services committed to safety, service, and damage-free delivery. The main commodities of freight transported are retail store merchandise, consumer products, manufactured products and grocery products. We are committed to transparency throughout the transportation of your freight to effectively track your loads with unmatched visibility. To get started you can simply request a transportation quote by clicking on the link above or by reaching out to us by phone!"/>
               </Row>
               <Row>
               <InfoText heading="World Class Customer Service" text="We provide outstanding service throughout the US with unparallled capacity to meet your seasonal demands and surges."/>
-              <InfoImage image="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9144d03989599996b0108a4fa2f32dca&auto=format&fit=crop&w=2250&q=80" alt="highway interchange at night"/>
+              <InfoImage image="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9144d03989599996b0108a4fa2f32dca&auto=format&fit=crop&w=2250&q=80" alt="city skyline and interchange view"/>
               </Row>
             </Col>
             <Footer />
