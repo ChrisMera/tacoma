@@ -30,4 +30,10 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 1680px) {
+  .navbar-brand {
+    margin: 0 67rem 0 2rem;
+  }
+}
+
 
