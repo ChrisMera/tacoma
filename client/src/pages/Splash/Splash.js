@@ -69,7 +69,7 @@ class Splash extends Component {
               <InfoText heading="We'll Deliver for You" text="Tacoma Transport, Inc. is a provider of dry van and refrigerated truckload transportation services committed to safety, service, and damage-free delivery. The main commodities of freight transported are retail store merchandise, consumer products, manufactured products and grocery products. We are committed to transparency throughout the transportation of your freight to effectively track your loads with unmatched visibility. To get started you can simply request a transportation quote by clicking on the link above or by reaching out to us by phone!"/>
               </Row>
               <Row>
-              <InfoText heading="World Class Customer Service" text="We provide outstanding service throughout the US with unparallled capacity to meet your seasonal demands and surges."/>
+              <InfoText heading="World Class Customer Service" text="Tacoma Transport, Inc. handles every load as if it were our own, and we are constantly finding new ways to better serve our customers. Our attentive management style emphasizes communication, transperancy, and respect. We are honest and ethical in all our business dealings, starting with how we treat one another. At Tacoma we do what is right for our customers and our employees. We provide outstanding service throughout the US with an unparalleled capacity to meet your seasonal demands and surges."/>
               <InfoImage image="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9144d03989599996b0108a4fa2f32dca&auto=format&fit=crop&w=2250&q=80" alt="city skyline and interchange view"/>
               </Row>
             </Col>
