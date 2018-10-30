@@ -50,7 +50,7 @@ class DashMenu extends Component {
         </li>
         <li>
           <p className="quote-title">Email:</p>
-          <p className="quote-item">{this.state.newQuoteLoad.email}</p>
+          <p className="quote-item-email">{this.state.newQuoteLoad.email}</p>
         </li>
         <li>
           <p className="quote-title">Origin:</p>

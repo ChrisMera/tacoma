@@ -1,4 +1,5 @@
 import React from "react";
+import "./Menu.css";
 
 
 export const MenuItem = props => (
@@ -9,17 +10,16 @@ export const MenuItem = props => (
       </button>
     </li>
     <li className="menu-group-item">
-      <a className="menu-item" >All Quote Requests</a>
+      <a className="menu-item">All Quote Requests</a>
     </li>
     <li className="menu-group-item">
-      <a className="menu-item" >Messages</a>
+      <a className="menu-item">Messages</a>
     </li>
     <li className="menu-group-item">
-      <a className="menu-item" >Quote Responses</a>
+      <a className="menu-item">Quote Responses</a>
     </li>
     <li className="menu-group-item">
       <a className="menu-item">Update Users</a>
     </li>
   </div>
-
 );

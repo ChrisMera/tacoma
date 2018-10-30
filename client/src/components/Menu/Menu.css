@@ -44,3 +44,9 @@
 .menu-btn:focus {
   outline: none;
 }
+
+@media screen and (max-width: 1523px) {
+  .menu-group-item {
+    font-size: 15px;
+  }
+}
