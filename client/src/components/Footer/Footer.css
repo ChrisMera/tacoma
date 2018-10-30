@@ -16,7 +16,7 @@
   padding: none;
   color: inherit;
   background-color: transparent;
-  /* float: left; */
+  margin-bottom: 1.5rem;
 }
 
 .btn-contact:focus {
@@ -28,10 +28,42 @@
   color: #C09F80;
 }
 
-/* .copyright {
-  text-align: center;
-} */
+@media screen and (max-width: 990px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 10rem;
+  }
+}
 
-/* .contact-phone {
-  display: inline;
-} */
+@media screen and (max-width: 990px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+  }
+  .btn-contact {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    font-size: 15px;
+    padding: 0.5rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer {
+    font-size: 14px;
+  }
+}
