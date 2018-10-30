@@ -18,3 +18,21 @@
     margin-bottom: 3rem;
   }
 }
+
+@media screen and (max-width: 990px) {
+  .info-headings {
+    font-size: 26px;
+  }
+  .info-text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 441px) {
+  .info-headings {
+    font-size: 20px;
+  }
+  .info-text {
+    font-size: 15px;
+  }
+}
